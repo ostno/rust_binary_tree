@@ -97,8 +97,8 @@ fn should_insert_lower_value_on_the_left() {
         left: None,
         right: None,
     };
-    node.insert(3);
-    assert_eq!(node.right.unwrap().value, 3);
+    node.insert(1);
+    assert_eq!(node.left.unwrap().value, 1);
 }
 
 #[test]
